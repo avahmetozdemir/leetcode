@@ -13,7 +13,7 @@ You can return the answer in any order.
 We first try to use two for-loop for the solution and have O(n2) Time Complexity. This demonstrates us that the solution with two for loop is not effecient.
 The second try is to use Hash Table. By using an auxiliary map of value:index, we solve the problem in O(n).We are checking that difference between target and the value in the array that exists in the map and if there is we return index of value in the array and the index. 
 
-## Best Time to Buy and Sell Stock
+## Best Time to Buy and Sell Stock(maxProfit)
 
 ### Description
 
@@ -25,3 +25,18 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 
 We first try to use two for-loop for the solution and have O(n²) Time Complexity and O(1) Space Complexity because only two variable were created. This demonstrates us that the solution with two for loop is not effecient. We also pass most of the tests but with a bigger input, the code is getting slow and show us 'Time Limit Exceeded' error. 
 Now we are looking for a better approach using One For Loop. Instead of having to recalculate all the values with each other, we can instead keep track of the minimum price and subtract it from the selling prices. Now we see that Time Complexity is O(n) and Space Complexity O(1). 
+
+## Sum of Two Integers
+
+### Description
+
+Given two integers a and b, return the sum of the two integers without using the operators + and -.
+
+### Solution
+
+Sum of two bits can be obtained by performing XOR (^) of the two bits. Carry bit can be obtained by performing AND (&) of two bits. 
+    
+    -Iterate till there is no carry 
+    -carry now contains common set bits of a and b
+    -Sum of bits of a and b where at least one of the bits is not set
+    -Carry is shifted by one so that adding it to a gives the required sum
