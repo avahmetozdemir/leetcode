@@ -40,3 +40,19 @@ Sum of two bits can be obtained by performing XOR (^) of the two bits. Carry bit
     -carry now contains common set bits of a and b
     -Sum of bits of a and b where at least one of the bits is not set
     -Carry is shifted by one so that adding it to a gives the required sum
+
+## Contains Duplicate
+
+### Description
+
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+### Solution
+
+First we tried to use two for-loop to compare integers that they are duplicate or not. Space complexity was O(1) because we did not use more memory but the time complexity was O(n2) that was to big for runtime. 
+
+Secondly we sorted the array and find the duplicate integers with for loop. Its time complexity was O(nlogn) which is better than the first try but with sorted array we used memory and sacrifice the memory for time.
+
+Converting numbers array into Set() we used the memory more than the first one but had a great runtime and this became faster than the before ones. 
+
+Lastly we tried to create a hash table of our array as we're iterating and evaluate it in place.We first iterate over the array of numbers. If the map already has the value then we return true. We check this with the .has property of maps. This code has the best runtime and the fastest of all the others. 
