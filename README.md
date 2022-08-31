@@ -56,3 +56,21 @@ Secondly we sorted the array and find the duplicate integers with for loop. Its 
 Converting numbers array into Set() we used the memory more than the first one but had a great runtime and this became faster than the before ones. 
 
 Lastly we tried to create a hash table of our array as we're iterating and evaluate it in place.We first iterate over the array of numbers. If the map already has the value then we return true. We check this with the .has property of maps. This code has the best runtime and the fastest of all the others. 
+
+## Product of Array Except Self
+
+### Description
+
+Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+You must write an algorithm that runs in O(n) time and without using the division operation.
+
+**Follow up:** Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
+
+### Solution
+
+We first think that we can multiply all of intergers and divide with the value of indexes. But as you can see we are forbiddeb to use division operation. 
+
+With the first solution we have O(n) for time complexity and O(n) for space complexity. Everything is fine and we are good with this solution. But in the description, they want us to solve the problem in O(1) extra space complexity. 
+
+Instead of using right side array, we are going to store it on a variable. 
