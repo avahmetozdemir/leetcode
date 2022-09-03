@@ -74,3 +74,26 @@ We first think that we can multiply all of intergers and divide with the value o
 With the first solution we have O(n) for time complexity and O(n) for space complexity. Everything is fine and we are good with this solution. But in the description, they want us to solve the problem in O(1) extra space complexity. 
 
 Instead of using right side array, we are going to store it on a variable. 
+
+## Reverse Linked List
+
+### Description
+
+Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+![reverseLinkedList](https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg)
+
+    Input: head = [1,2,3,4,5]
+    Output: [5,4,3,2,1]
+
+Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+### Solution
+
+- **First Solution:** "Iterative Approach"- Changing pointers of nodes by using previous, current and next.To solve this problem we should be manipulating the node pointers in place and not creating a new linked list. 
+
+    Time Complexity : O(n) Space Complexity: O(1)
+
+- **Second Solution:** "Recursive Approach"- We started at the top with the head node to reverse the list then recursively traverse down the call stack until we reached the last node. 
+    
+    Time Complexity : O(n) Space Complexity : O(n)
