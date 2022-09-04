@@ -97,3 +97,25 @@ Follow up: A linked list can be reversed either iteratively or recursively. Coul
 - **Second Solution:** "Recursive Approach"- We started at the top with the head node to reverse the list then recursively traverse down the call stack until we reached the last node. 
     
     Time Complexity : O(n) Space Complexity : O(n)
+
+## Linked List Cycle
+
+### Description
+
+Given head, the head of a linked list, determine if the linked list has a cycle in it.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter.
+
+Return true if there is a cycle in the linked list. Otherwise, return false.
+
+### Solution
+
+        1.Traverse the given list with two pointers
+
+        2.Slow pointer moves by one and fast pointer by two
+
+        3.If two pointers meet, returns true, if not returns false
+
+- Time complexity: O(n). Only one traversal of the linked list is needed.
+
+- Space complexity: O(1). No space is needed, it’s constant.
