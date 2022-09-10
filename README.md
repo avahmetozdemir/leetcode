@@ -135,3 +135,29 @@ Write a function that takes an unsigned integer and returns the number of '1' bi
         Input: n = 00000000000000000000000000001011
         Output: 3
         Explanation: The input binary string 00000000000000000000000000001011 has a total of three '1' bits.
+
+## Maximum Subarray
+
+### Description
+
+Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+A subarray is a contiguous part of an array.
+
+**Example:**
+
+        Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+        Output: 6
+        Explanation: [4,-1,2,1] has the largest sum = 6.
+
+**Follow up:** If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+
+### Solution
+
+First solution is the brute force solution by using two for-loops, not very efficent calculate the sum of every possible contiguous subarray and play-king-of-the-hill with a maxSum variable.
+
+Time: O(n²) , Space: O(1)
+
+In second solution; by comparing previous number with its front number, we find the max of twos. Then we compare again this max of twos again and again until find the maximum subarray.
+
+Time Complexity : O(n)
+Space Complexity: O(1)
