@@ -191,3 +191,20 @@ Return the length of the longest substring containing the same letter you can ge
         Update the character frequency
         Shrink the window of characters we are looking at until we can have a window of all the same characters + k charcters to change
         Update the output if the current window is greater than our previous max window
+
+## Maximum Depth of Binary Tree
+
+### Description
+
+Given the root of a binary tree, return its maximum depth.
+A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+![example](https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg)
+
+                Input: root = [3,9,20,null,null,15,7]
+                Output: 3
+
+#### Solution Complexity:
+
+**Time complexity :** O(n).
+**Space complexity :** O(1).
