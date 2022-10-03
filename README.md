@@ -208,3 +208,22 @@ A binary tree's maximum depth is the number of nodes along the longest path from
 
 **Time complexity :** O(n).
 **Space complexity :** O(1).
+
+## Valid Anagram
+
+### Description
+
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+**Example 1:**
+
+                Input: s = "anagram", t = "nagaram"
+                Output: true
+
+### Solution
+
+**First Solution** Used javascript array methods to sort and compare them to return true or false.
+
+But using sort method is unnecessary work.Instead we could use hash map to find the frequency of each character.
