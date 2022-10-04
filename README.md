@@ -246,4 +246,4 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 ### Solution
 
-![climbing-stairs]()
+![climbing-stairs](https://github.com/avahmetozdemir/leetcode/blob/main/screenshots/climbing-stairs.png?raw=true)
