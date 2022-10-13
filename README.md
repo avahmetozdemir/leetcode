@@ -267,3 +267,27 @@ The final sorted array should not be returned by the function, but instead be st
 
 **Time Complexity :** Worst Case : O(m+n) , O(n)
 **Space Complexity:** O(1)
+
+## Length of Last Word
+
+### Description
+
+Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+A word is a maximal substring consisting of non-space characters only.
+
+**Example :**
+
+    Input: s = "   fly me   to   the moon  "
+    Output: 4
+    Explanation: The last word is "moon" with length 4.
+
+### Solution
+
+    1.Create lastWordCount variable.
+    2.Loop backwards s.
+      a. Condition if current char is not a space.
+        i. loop backwards for current char.
+          1. condition if current char is not a space.
+            a. increment lastWordCount
+          2. else return lastWordCount
