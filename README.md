@@ -315,3 +315,17 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Time Complexity :** O(max(m.n))
 **Space Complexity :** O(max(m,n))
 m and n are size of l1 and l2
+
+## Valid Parentheses
+
+### Description
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+**Time Complexity :** O(N)
+**Space Complexity :** O(N)
