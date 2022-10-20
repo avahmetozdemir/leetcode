@@ -329,3 +329,13 @@ Every close bracket has a corresponding open bracket of the same type.
 
 **Time Complexity :** O(N)
 **Space Complexity :** O(N)
+
+## Palindrome Number
+
+### Description
+
+Given an integer x, return true if x is palindrome integer.
+
+An integer is a palindrome when it reads the same backward as forward.
+
+For example, 121 is a palindrome while 123 is not.
