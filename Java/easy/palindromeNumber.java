@@ -11,6 +11,6 @@ class Solution{
             x = x/10;
         }
 
-        return r == x;
+        return r == x || reversed/10 = x;
     }
 }
