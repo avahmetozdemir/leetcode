@@ -342,7 +342,7 @@ For example, 121 is a palindrome while 123 is not.
 
 ## Merge Two Sorted Lists
 
-## Description
+### Description
 
 You are given the heads of two sorted linked lists list1 and list2.
 
@@ -352,3 +352,22 @@ Return the head of the merged linked list.
 
 **Time Complexity: O(n)**
 **Space Comlexity: O(1)**
+
+## Search Insert Position
+
+### Description
+
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+**Example 1:**
+
+    Input: nums = [1,3,5,6], target = 5
+    Output: 2
+
+### Solution
+
+**First Solution :** Search the target number according to its condition using for loop.  Time Complexity : O(N) Space Complexity: O(1)
+
+**Second Solution :** Find the solution by using Binary Search on the array. Time Comlexity: O(log(n)) Space Complexity : O(1)
