@@ -370,4 +370,4 @@ You must write an algorithm with O(log n) runtime complexity.
 
 **First Solution :** Search the target number according to its condition using for loop.  Time Complexity : O(N) Space Complexity: O(1)
 
-**Second Solution :** Find the solution by using Binary Search on the array. Time Comlexity: O(log(n)) Space Complexity : O(1)
+**Second Solution :** The array is sorted and we use this advantage and find the solution by using Binary Search on the array. Time Comlexity: O(log(n)) Space Complexity : O(1)
