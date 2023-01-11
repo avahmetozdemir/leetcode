@@ -439,3 +439,16 @@ Given the head of a sorted linked list, delete all duplicates such that each ele
 
     Input: head = [1,1,2]
     Output: [1,2]
+
+## Longest Common Prefix
+
+### Description
+
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+**Example 1:** 
+
+    Input: strs = ["flower","flow","flight"]
+    Output: "fl"
